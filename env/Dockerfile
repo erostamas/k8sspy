@@ -25,8 +25,6 @@ RUN wget https://github.com/fullstorydev/grpcurl/releases/download/v1.8.5/grpcur
 RUN tar -xzf /tmp/grpcurl_1.8.5_linux_x86_64.tar.gz
 RUN cp /tmp/grpcurl /usr/bin/
 
-ADD src /usr/bin/mycode/
-
 WORKDIR /
 
 CMD tail -f /dev/null
